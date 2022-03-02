@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 class Products extends StatelessWidget {
 
   final List<String> products;
-  Products(this.products);
-  
+  const Products({ Key? key, required this.products }) : super(key: key);
+
   @override
   Widget build(BuildContext context){
     return Column(
